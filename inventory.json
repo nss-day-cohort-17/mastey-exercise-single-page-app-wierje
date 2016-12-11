@@ -1,0 +1,64 @@
+{
+  "cars": [
+    {
+      "img": "/img/2012-Nissan-Maxima-SV.jpg",
+      "make": "Nissan",
+      "model": "Maxima",
+      "year": "2012",
+      "price": "15900",
+      "color": "Silver",
+      "purchased": false,
+      "description": "This is an immaculate 2012 Nissan Maxima with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "img": "/img/lotus.jpg",
+      "make": "Lotus",
+      "model": "Elise",
+      "year": "2005",
+      "price": "39800",
+      "color": "Blue",
+      "purchased": false,
+      "description": "Proud to present this truly exceptional 1-owner 2005 LOTUS ELISE colored in Nightfall Blue Metallic over black leather interior"
+    },
+    {
+      "img": "img/2014-Tesla-Model-S-red-colour-pictures.jpg",
+      "make": "Tesla",
+      "model": "Model S",
+      "year": "2014",
+      "price": "59500",
+      "color": "Red",
+      "purchased": false,
+      "description": "85 kWh Battery, 265 miles range (EPA), 5.4 seconds 0-60 mph."
+    },
+    {
+      "img": "img/porsche911.jpg",
+      "make": "Porsche",
+      "model": "911 Carrera",
+      "year": "2004",
+      "price": "89500",
+      "color": "Red",
+      "purchased": false,
+      "description": "An awesome price considering its low mileage! This 2 door, 4 passenger coupe has not yet reached the 20,000 mile mark! Porsche infused the interior with top shelf amenities, such as: front fog lights, power moon roof, and power windows."
+    },
+    {
+      "img": "img/chevrolet-corvette.png",
+      "make": "Chevrolet",
+      "model": "Corvette Z06",
+      "year": "2016",
+      "price": "87500",
+      "color": "grey",
+      "purchased": false,
+      "description": "Proud to present a pristine, 1-owner 2016 CHEVROLET CORVETTE CONVERTIBLE Z06 colored in Shark Grey exterior over Adrenaline Red leather interior. The Z06 is one of the best CORVETTE offerings from Chevrolet since its first car in 1953.  There is no shortage of curb appeal on this one!"
+    },
+    {
+      "img": "img/vw_beetle.jpg",
+      "make": "VW",
+      "model": "Super Beetle",
+      "year": "1979",
+      "price": "17500",
+      "color": "silver",
+      "purchased": false,
+      "description": "Wow check out this ultra rare super LOW miles VW Super Beetle Convertible! This is one of the most iconic vehicles ever made this is your chance to own a piece of history! Enjoy top down driving pleasure while you listen to the famous four cylinder engine! Fully rebuilt engine TONS of service history mean this Beetle is in excellent shape mechanically 55000 ORIGINAL miles!"
+    }
+  ]
+}
