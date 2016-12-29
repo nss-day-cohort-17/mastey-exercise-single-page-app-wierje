@@ -6,8 +6,8 @@ var Carlot = (function() {
             console.log("test", callback);
             // create an xhr to load carInventory
             var carLoader = new XMLHttpRequest();
-// Listen for when the load event is broadcast
-// and execute an anonymous callback.
+            // Listen for when the load event is broadcast
+            // and execute an anonymous callback.
             carLoader.open("GET", "https://mastery-exercise-spa.firebaseio.com/.json");
             carLoader.addEventListener("load", function(event) {
                 // Set the value of the private array
@@ -21,21 +21,20 @@ var Carlot = (function() {
             carLoader.send();
         }
     };
-}) ();
+})();
 
-(function () {
-    'use strict';
-    function populatePage(carInventory) {
-        var output = document.querySelector('.output');
-        var results = '';
-        carInventory.forEach(function (car, index) {
-            if (index % 3 === 0) {
-                results += `<div class='row'>`;
-            }
 
-            results += `
-        <div class='col-md-4 carCard'style='border-color: ${car.color}'>
-           <img src='${car.img}'>
+function populatePage(carInventory) {
+    var output = document.querySelector(".output");
+    var results = "";
+    carInventory.forEach(function(car, index) {
+        if (index % 3 === 0) {
+            results += `<div class="row">`;
+        }
+
+        results += `
+        <div class="col-md-4 carCard">
+           <img src="${car.img}">
            <h5>Make: ${car.make}</h5>
            <h5>Year: ${car.year}</h5>
            <h5>Model: ${car.model}</h5>
@@ -44,14 +43,27 @@ var Carlot = (function() {
            <p>${car.description}</p>
         </div>
       `;
-            if (index % 3 === 2) {
-                results += `</div>`;
-            }
-        });
-        output.innerHTML = results;
+        if (index % 3 === 2) {
+            results += `</div>`;
+        }
+    });
+    output.innerHTML = results;
 
-        Carlot.activateEvents();
-    }
-    // events.js
-    Carlot.getCarInventory(populatePage);
-}());
+    activateEvents();
+}
+Carlot.getCarInventory(populatePage);
+
+function activateEvents() {
+    var cards = document.querySelectorAll(".carCard");
+    cards.forEach(function(card) {
+        card.addEventListener("click", function() {
+            console.log("clicked");
+            var userInput = document.querySelector("#userInput");
+            userInput.value = "";
+            userInput.focus();
+            resetCards(cards);
+            styleCard(card, "orange");
+            mirrorText(card, userInput);
+        });
+    });
+}
