@@ -52,18 +52,3 @@ function populatePage(carInventory) {
     activateEvents();
 }
 Carlot.getCarInventory(populatePage);
-
-function activateEvents() {
-    var cards = document.querySelectorAll(".carCard");
-    cards.forEach(function(card) {
-        card.addEventListener("click", function() {
-            console.log("clicked");
-            var userInput = document.querySelector("#userInput");
-            userInput.value = "";
-            userInput.focus();
-            resetCards(cards);
-            styleCard(card, "orange");
-            mirrorText(card, userInput);
-        });
-    });
-}
